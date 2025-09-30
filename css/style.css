@@ -1,3 +1,32 @@
+:root {
+ --body-bg:lightblue;
+ --container-bg:white;
+ --left-bg:deepskyblue;
+ --right-bg:white;
+ --nav-bg:black;
+ --nav-font-color:white;
+ --title-font-color:darkblue;
+ --content-font-color:black;
+ --precent-color:rgb(192, 255, 194);
+ --percent-color-completed:lightblue;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --body-bg: #0b1220;             
+  --container-bg: #111827;        
+  --left-bg: #1e3a5f;             
+  --right-bg: #111827;            
+  --nav-bg: #0f172a;              
+  --nav-font-color: #e5e7eb;      
+  --title-font-color: #93c5fd;   
+  --content-font-color: grey;  
+  --precent-color: #184a2c;       
+  --percent-color-completed: #3b82f6; 
+
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +36,7 @@
 html { font-size: 100%; }              
 
 body {
-  background-color: lightblue;
+  background-color: var(--body-bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +52,7 @@ body {
   width: 100%;
   max-width: 1000px;           
   background: #222;
-  color: #fff;
+  color: var(--nav-font-color);
   z-index: 1000;
 }
 
@@ -39,7 +68,7 @@ body {
 
 .site-nav .brand {
   font-weight: 700;
-  color: #fff;
+  color: var(--nav-font-color);
   text-decoration: none;
   font-size: 1.125rem;
 }
@@ -55,7 +84,7 @@ body {
 }
 
 .site-nav .nav-list a {
-  color: #fff;
+  color: var(--nav-font-color);
   text-decoration: none;
   padding: .4rem .6rem;
   border-radius: .25rem;
@@ -73,7 +102,7 @@ body {
   width: 100%;
   max-width: 1000px;
   min-height: 1000px;
-  background-color: #fff;
+  background-color:var(--container-bg);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -81,7 +110,7 @@ body {
 
 .container .leftside {
   position: relative;
-  background-color: deepskyblue;
+  background-color: var(--left-bg);
   padding: 40px;
 }
 
@@ -106,7 +135,7 @@ body {
   margin-top: 20px;
   font-size: 1rem;
   text-transform: uppercase;
-  color: darkblue;
+  color: var(--title-font-color);
   text-align: center;
   font-weight: 600;
   line-height: 1.4em;
@@ -122,7 +151,7 @@ body {
 }
 
 .contactInfo .title {
-  color:darkblue;
+  color:var(--title-font-color);
   margin-bottom: 20px;
 }
 
@@ -143,7 +172,7 @@ body {
 }
 
 .contactInfo ul li .text {
-  color:darkblue;
+  color:var(--title-font-color);
 }
 
 .contactInfo ul li a {
@@ -156,18 +185,18 @@ body {
 }
 
 .contactInfo.education h5 {
-  color: darkblue;
+  color: var(--title-font-color);
 }
 
 .contactInfo.education h4 {
-  color:darkblue;
+  color:var(--title-font-color);
 }
 
 .contactInfo.languages .percent {
   position: relative;
   width: 100%;
   height: 6px;
-  background-color: rgb(192, 255, 194);
+  background-color: var(--precent-color);
   display: block;
   margin-top: 5px;
 }
@@ -177,12 +206,12 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: lightblue;
+  background-color: var(--percent-color-completed);
 }
 
 .container .rightside {
   position: relative;
-  background-color: white;
+  background-color: var(--right-bg);
   padding: 40px;
 }
 
@@ -194,7 +223,7 @@ body {
 }
 
 .title2 {
-  color: darkblue;
+  color: var(--title-font-color);
   margin-bottom: 10px;
 }
 
@@ -212,10 +241,10 @@ p {
 }
 
 .about .box .year-affiliation h5 {
-  color: darkblue;
+  color: var(--title-font-color);
 }
 .about .box .text h4 {
-  color: darkblue;
+  color: var(--title-font-color);
   font-size: 1rem;
 }
 
@@ -229,14 +258,14 @@ p {
 }
 
 .skills .box h4 {
-  color: darkblue;
+  color: var(--title-font-color);
 }
 
 .skills .box .percent {
   position: relative;
   width: 100%;
   height: 100%;
-  background-color: rgb(192, 255, 194);
+  background-color: var(--precent-color);
 }
 
 .skills .box .percent div {
@@ -244,7 +273,7 @@ p {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: lightblue;
+  background-color: var(--percent-color-completed);
 }
 
 .interest ul {
@@ -255,7 +284,7 @@ p {
 .interest ul li {
   list-style: none;
   margin: 10px;
-  color: darkblue;
+  color: var(--title-font-color)
 }
 
 
@@ -269,6 +298,11 @@ html { font-size: 100%; }
 
 .container { 
   grid-template-columns: 1fr;
+ }
+
+
+ p {
+  color: var(--content-font-color);
  }
 
 
