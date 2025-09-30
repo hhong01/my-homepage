@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Hal's Resume</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="site-nav">
+    <div class="nav-inner">
+      <a class="brand" href="#">Welcome to Hal's personal website</a>
+      <ul class="nav-list">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
+    </div>
+    </nav>
+    
+
+    <div class="container">
+      <div class="leftside">
+        <div class="profile">
+          <img src="/img/cute_dog.jpeg" alt="" />
+          <h2>Hal <br /><span>Master student in CS at Villanova</span></h2>
+        </div>
+
+        <div class="contactInfo" id="contacts">
+          <h3 class="title">Contact</h3>
+          <ul>
+            <li>
+              <span class="material-icons">call</span>
+              <span class="text">123 456 7890</span>
+            </li>
+            <li>
+              <span class="material-icons">email</span>
+              <a href="mailto:hhong01@villanova.edu"><span class="text">hhong01@villanova.edu</span></a>
+            </li>
+            <li>
+              <span class="material-icons">web</span>
+              <a href="https://github.com/hhong01" target="_blank">
+                <span class="text">https://github.com/hhong01</span></a
+              >
+            </li>
+            <li>
+              <span class="material-icons">location_on</span>
+              <a href="https://www.google.com/maps/place/Villanova+University/@40.0368967,-75.3451534,17z/data=!3m1!4b1!4m6!3m5!1s0x89c69558e0e10d0d:0xa59e065adeefd34c!8m2!3d40.0368926!4d-75.3425785!16zL20vMDFqXzVr?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"><span class="text">800 Lancaster Ave, Villanova, PA 19085</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo education">
+          <h3 class="title">Education Experience</h3>
+          <ul>
+            <li>
+              <h5>2023-2025</h5>
+              <h4>Villanova University</h4>
+              <span class="text">Computer Science</span>
+            </li>
+            <li>
+              <h5>2016-2020</h5>
+              <h4>Wuhan University of Technology</h4>
+              <span class="text">Computer Science</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contactInfo languages">
+          <h3 class="title">Languages</h3>
+
+          <ul>
+            <li><span class="text">Chinese</span></li>
+            <li>
+              <div class="percent">
+                <div style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li><span class="text">English</span></li>
+            <li>
+              <div class="percent">
+                <div style="width: 60%"></div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="rightside" id="introduction">
+        <div class="about">
+          <h2 class="title2">Introduction</h2>
+          <p>
+           Hi. My name is Hal Hong. I am currently a graduate student in Villanova. I am passionate about all kinds of programming
+           languages and their implementations, especially functional programming languages. And I am also a Rustacean, and actively
+           use rust to implement all sorts of projects.
+          </p>
+        </div>
+        <div class="about">
+          <h2 class="title2" id="projects">Projects</h2>
+          <div class="box">
+            <div class="year-affiliation">
+              <h5>2025-now</h5>
+              <h5>Villanova</h5>
+            </div>
+            <div class="text">
+              <h4>Mini-Database</h4>
+              <p>
+                Use Rust to implement a Mini Database, supports basic SQL statements and the Snapshot Isolation based on MVCC. 
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year-affiliation">
+              <h5>2024-2025</h5>
+              <h5>Villanova</h5>
+            </div>
+            <div class="text">
+              <h4>Smart Home System</h4>
+              <p>
+                Use CNN and LTSM to train a model that can recognize and analyize and act correspondingly to voice commands and 
+                hand gesture commands. 
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="year-affiliation">
+              <h5>2023-2024</h5>
+              <h5>Villanova</h5>
+            </div>
+            <div class="text">
+              <h4>A compiler for the small functional programming lanuguage</h4>
+              <p>
+                use Java to implement a small educational functional programming languages, features including basic
+                control structures, function, closure, recursion and so on. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="about skills">
+          <h2 class="title2">professional Skills</h2>
+          <div class="box">
+            <h4>Rust</h4>
+            <div class="percent">
+              <div style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Haskell</h4>
+            <div class="percent">
+              <div style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Python</h4>
+            <div class="percent">
+              <div style="width: 90%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Linux</h4>
+            <div class="percent">
+              <div style="width: 95%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>SQL</h4>
+            <div class="percent">
+              <div style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="box">
+            <h4>Git</h4>
+            <div class="percent">
+              <div style="width: 85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="about interest">
+          <h2 class="title2" id ="hobbies">Hobbies</h2>
+          <ul>
+            <li>
+              <span class="material-icons">sports_basketball</span>
+              basketball
+            </li>
+            <li>
+              <span class="material-icons" style="vertical-align: -6px"
+                >movie</span
+              >movie
+            </li>
+            <li>
+              <span class="material-icons" style="vertical-align: -6px"
+                >hiking</span
+              >hiking
+            </li>
+            <li>
+              <span class="material-icons" style="vertical-align: -6px"
+                >piano</span
+              >piano
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
